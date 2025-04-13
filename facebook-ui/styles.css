@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.whole-container {
+    display: flex;
+    width: 980px;
+    gap: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-container {
+    width: 500px;
+}
+
+.logo {
+    color: #0866ff;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 24px;
+    color: #1c1e21;
+}
+
+.form {
+    background-color: #fff;
+    padding: 20px 16px;
+    width: 396px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1), 
+                0 8px 16px rgba(0,0,0,0.1);
+}
+
+.form input[type="text"],
+.form input[type="password"] {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    font-size: 17px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+}
+
+.form input[type="button"] {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: #1877f2;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: opacity 300ms ease-in
+}
+
+.form input[type="button"]:hover {
+    opacity: .8;
+}
+
+
+ #forgot-password {
+    display: block;
+    text-align: center;
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.form .divider {
+    height: 1px;                  /* Ensure height is 1px */
+    background-color: #dadde1;    /* Slightly darker color for visibility */
+    margin: 20px 0;               /* Margin around the divider */
+    width: 100%;                  /* Make the divider take full width of the container */
+}
+
+.form input[type="button"]:last-of-type {
+    background-color: #42b72a;
+    font-size: 17px;
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+    padding: 10px 20px;
+}
+
+
+.footer-text {
+    margin-top: 20px;      /* Space below the last button */
+    text-align: center;
+    font-size: 14px;
+    color: #1c1e21;
+}
+
+.footer-text a {
+    font-weight: bold;
+    color: #1c1e21;
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
