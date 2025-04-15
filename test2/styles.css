@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playball&family=Playwrite+US+Trad:wght@100..400&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+
+}
+
+/* body{
+} */
+
+.navbar {
+    max-width: 1280px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: rgb(3, 0, 30);
+    padding: 25px 30px;
+}
+
+.navbar .logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.navbar .logo-wrapper:hover {
+    opacity: .7;
+}
+
+.navbar .logo-wrapper img {
+    width: 35px;
+}
+
+.navbar .logo-wrapper h1 {
+    font-family: "Nunito";
+    font-size: 35px;
+    color: orange;
+}
+
+.navbar .menu-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar .menu-wrapper .menu-items {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.navbar .menu-wrapper .menu-items li a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.navbar .menu-wrapper .menu-items li a:hover {
+    text-decoration: underline;
+    opacity: .7;
+    color: orange;
+}
+
+.navbar .menu-wrapper .book {
+    margin-left: 50px;
+    padding: 15px 25px;
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.navbar .menu-wrapper .book:hover {
+    opacity: .7;
+}
+
+.body-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.body-content .top-half {
+    display: flex;
+    gap: 15px;
+}
+
+.body-content .top-half .card {
+    padding: 20px 20px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.body-content .top-half .card img {
+    width: 50px;
+}
+
+.body-content .top-half .card .title {
+    font-family: "Nunito";
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(3, 0, 30);
+}
+
+.body-content .top-half .card .subtitle {
+    font-size: 14px;
+    color: grey;
+}
+
+.body-content .bottom-half {
+    margin-top: 50px;
+    display: flex;
+    
+}
+
+.body-content .bottom-half .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 equal columns */
+    gap: 10px;
+    /* spacing between items */
+}
+
+.body-content .bottom-half .image-grid img {
+
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.body-content .bottom-half .details-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 40px;
+}
+
+.body-content .bottom-half .details-container .top-row{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.body-content .bottom-half .details-container .top-row p{
+    font-family: "Playball";
+    font-size: 30px;
+    color: orange;
+}
+
+.body-content .bottom-half .details-container .top-row .dash{
+    width: 50px;
+    height: 2px;
+    background-color: orange;
+}
+
+
+.body-content .bottom-half .details-container .title h1 {
+    font-family: "Nunito";
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+}
+
+
+.body-content .bottom-half .details-container .title h1 span img{
+    width: 35px;
+}
+
+.body-content .bottom-half .details-container .details-1{
+    margin-top: 10px;
+    color: grey;
+    text-align: justify;
+
+}
+
+.body-content .bottom-half .details-container .details-2{
+    color: grey;
+    text-align: justify;
+}
+
+.body-content .bottom-half .details-container .stats{
+    display: flex;
+    justify-content: start;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+.body-content .bottom-half .details-container .stats .exp{
+    border-left: orange 5px solid;
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    
+}
+
+.body-content .bottom-half .details-container .stats .exp .number{
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.body-content .bottom-half .details-container .stats .exp .details{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.body-content .bottom-half .details-container .stats .exp .details .title{
+    color: grey;
+}
+.body-content .bottom-half .details-container .stats .exp .details .subtitle{
+    color: black;
+    font-weight: bold;
+}
+
+
+.body-content .bottom-half .details-container .stats .pop{
+    border-left: orange 5px solid;
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    
+}
+
+.body-content .bottom-half .details-container .stats .pop .number{
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.body-content .bottom-half .details-container .stats .pop .details{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.body-content .bottom-half .details-container .stats .pop .details .title{
+    color: grey;
+}
+.body-content .bottom-half .details-container .stats .pop .details .subtitle{
+    color: black;
+    font-weight: bold;
+}
+
+.body-content .bottom-half .details-container .footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.body-content .bottom-half .details-container .footer .read-more{
+    padding: 15px 35px;
+    border: none;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.body-content .bottom-half .details-container .footer .read-more:hover{
+    opacity: .7;
+}
+
+.body-content .bottom-half .details-container .footer .nav{
+    padding: 15px 35px;
+    border: none;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    transition: all 300ms ease;
+
+}
+
+.body-content .bottom-half .details-container .footer .nav:hover{
+    opacity: .7;
+}
+
+.body-content .bottom-half .details-container .footer .nav img{
+    width: 30px;
+}
